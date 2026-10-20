@@ -19,14 +19,15 @@ The methodology is explained in detail within the paper.
 # Proposal
 Pre-process the temperature change date to derive and store an 'event' within the logger.  
 This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
-(Does require custom hardware and software).  
+- requires custom hardware / software.  
 
 The Joyce method does identify false events, to differentiate these with minimal data,     
 store a string of derived values e.g. "< &#916;t 5.2&deg;C/min,&#916;t 4.9 &deg;C/min,&#916;t 3.8 &deg;C/min,&#916;t 2.9&deg;C/min, >"  
 (It is proposed that trigger parameters, &#916; temperature and &#916; time would be user configurable). 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module  
-  Passive NTC thermistor differential temperature sensor*  
+- Passive NTC thermistor differential bridge temperature sensor*
+- DMT  
    
  - 
 # Parameters:
