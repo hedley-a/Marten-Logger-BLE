@@ -1,5 +1,6 @@
 # Marten box occupancy logger
-![grafik](https://github.com/hedley-a/Marten-Logger-BLE/images/DenBox_front.jpg)
+![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenBox_front.jpg)
+
 - Objective: A low cost, reliable and easy to use logging device
 # Inspiration: 
  - Intellectual challenge;
