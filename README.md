@@ -21,9 +21,9 @@ Pre-process the temperature change date to derive and store an 'event' within th
 This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
 - requires custom hardware / software.  
 
-The Joyce method does identify false events, to differentiate these with minimal data,     
-store a string of derived values e.g. "< &#916;t 5.2&deg;C/min,&#916;t 4.9 &deg;C/min,&#916;t 3.8 &deg;C/min,&#916;t 2.9&deg;C/min, >"  
-(It is proposed that trigger parameters, &#916; temperature and &#916; time would be user configurable).  
+The Joyce method does identify false events, to differentiate these, store pre and post trigger values.  
+e.g. "< &#916;t 5.2&deg;C:trig -5 min, &#916;t 4.9 &deg;C trig -4 min, &#916;t 3.8 &deg;C trig -3 min,...&#916;t 2.9&deg;C trig+5 min, >"  
+Trigger parameters, &#916; temperature and &#916; time would be user configurable over bluetooth.  
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module  
