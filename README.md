@@ -17,8 +17,9 @@ Temperatures were sampled every 5 minutes over 4 months.
 Potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
 The methodology is explained in detail within the paper.
 # Proposal
-Pre-process the temperature change date to derive and store an 'event' within the logger.
-This vastly reduces the amount of data stored with cost and power consumption savings but requires custom hardware and software.
+Pre-process the temperature change date to derive and store an 'event' within the logger.  
+This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
+(Does require custom hardware and software).
 It would be possible to store detailed samples pre and post trigger (the Joyce method does identify false events)
 But most efficently as "< &#916;t 5&deg;C/min >"
 It is proposed that the trigger time/&#916;t would be user configurable
