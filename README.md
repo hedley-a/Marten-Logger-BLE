@@ -20,7 +20,8 @@
 Pre-process the temperature change date to derive and store an 'event' within the logger.
 This vastly reduces the amount of data stored with cost and power consumption savings but requires custom hardware and software.
 It would be possible to store detailed samples pre and post trigger (the Joyce method does identify false events)
-This however could be stored efficently as < $\Delta$t 5&deg;C/min>
+But most efficently as "< &#916;t 5&deg;C/min >"
+It is proposed that the trigger time/&#916;t would be user configurable
 If it is deemed acceptable to only store occupancy events and just daily maximum and minimum temperature hardware can be even simpler and cost further reduced 
    
  - 
