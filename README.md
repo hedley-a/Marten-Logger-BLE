@@ -21,8 +21,8 @@ Pre-process the temperature change date to derive and store an 'event' within th
 This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
 - requires custom hardware / software.  
 
-The Joyce method does identify false events, to differentiate these, store pre and post trigger values.  
-e.g. "< &#916;t 5.2&deg;C:trig -5 min, &#916;t 4.9 &deg;C trig -4 min, &#916;t 3.8 &deg;C trig -3 min,...&#916;t 2.9&deg;C trig+5 min, >"  
+The Joyce method does identify false events, to differentiate, store pre and post trigger values.  
+e.g. "< &#916;t 5.2&deg;C:trig -5 min, &#916;t 4.9 &deg;C trig -4 min, &#916;t 3.8 &deg;C trig -3 min,...&#916;t 2.9&deg;C trig +5 min, >"  
 Trigger parameters, &#916; temperature and &#916; time would be user configurable over bluetooth.  
 
 ## Hardware
@@ -31,9 +31,13 @@ Trigger parameters, &#916; temperature and &#916; time would be user configurabl
 - SHT41 SHT45 Temperature and Humidity Sensor(external enviroment)  
   
 ### Storage:
-512k of flash memory 
-- Occupancy: binary state time-stamped
-- Maximum and minimum temperatures 
+512k of flash memory program and data
+- Occupancy: state time-stamped
+- Maximum and minimum temperatures
+### Lifespan Estimate (64 KB Flash Partition)
+• Daily Footprint: 4 events × 24 bytes + 16 bytes (Daily Min/Max) = 112 bytes / day.  
+• Total Lifespan: A dedicated 64 KB partition will last ~585 days (~1.6 years) of continuous logging before needing a page rotation or overwrite.
+
 
 
 # Features:
