@@ -1,5 +1,11 @@
-# ESP8266 based datalogger for EPEver Solar CC
-- Thanks to  https://github.com/chickey/RS485-WiFi-EPEver
+# Marten box occupancy logger 
+- Objective: A low cost, reliable and easy to use logging device
+# Inspiration: 
+ - Intellectual challenge;
+ - Could improve on the 
+# Parameters:
+- Occupancy: binary state time-stamped
+- Maximum and minimum temperatures 
 
 
 # Features:
