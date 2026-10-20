@@ -20,8 +20,8 @@ The methodology is explained in detail within the paper.
 Pre-process the temperature change date to derive and store an 'event' within the logger.  
 This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
 (Does require custom hardware and software).  
-It would be possible to store detailed samples pre and post trigger (the Joyce method does identify false events).  
-Most efficently, not as raw data, but a string of values e.g. "< &#916;t 5&deg;C/min >"  
+The Joyce method does identify false events, to differentiate these with minimal data,     
+store a string of values e.g. "< &#916;t 5&deg;C/min >"  
 (It is proposed that the trigger &#916;temperature and &#916;time would be user configurable).  
    
  - 
