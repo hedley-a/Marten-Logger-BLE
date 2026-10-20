@@ -11,7 +11,7 @@
      USA) that was screwed to an inside wall roughly 5 cm above the top of the
      wood chip bedding material, close to the bottom of boxes so that animals resting
      in den boxes would be more likely to heat the air around
-     temperature loggers. "_
+     temperature loggers. "_  
     Temperatures were sampled every 5 minutes over 4 months, potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
     The method is explained in detail within the paper.
 # Proposal
