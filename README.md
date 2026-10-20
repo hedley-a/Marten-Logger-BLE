@@ -32,8 +32,8 @@ Trigger parameters, &#916; temperature and &#916; time would be user configurabl
   
 ### Storage:
 512k of flash memory program and data
-- Occupancy: state time-stamped
-- Maximum and minimum temperatures
+- Occupancy: state time-stamped data  
+- Daily maximum and minimum internal and external temperatures  
 ### Lifespan Estimate (64 KB Flash Partition)
 • Daily Footprint: 4 events × 24 bytes + 16 bytes (Daily Min/Max) = 112 bytes / day.  
 • Total Lifespan: A dedicated 64 KB partition will last ~585 days (~1.6 years) of continuous logging before needing a page rotation or overwrite.
