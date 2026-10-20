@@ -1,10 +1,27 @@
 # Marten box occupancy logger
 ![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenBox_front.jpg)
+# Marten box inside view
+![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenBox_inside.jpg)
 
-- Objective: A low cost, reliable and easy to use logging device
-# Inspiration: 
- - Intellectual challenge;
- - Could improve on the 
+- Objectives: A low cost, reliable and easy to use logging device
+- Improving upon the method of detecting occupancy used in the Joyce North American study
+# Joyce Study
+   https://stacksjournal.org/wp-content/uploads/2025/06/Joyce-25003-Article.pdf
+    "Each den box had an internal temperature logger (HOBO® UA-001-64
+     pendant logger or MX2201, Onset Computer Corporation, Massachusetts,
+     USA) that was screwed to an inside wall roughly 5 cm above the top of the
+     wood chip bedding material, close to the bottom of boxes so that animals resting
+     in den boxes would be more likely to heat the air around
+     temperature loggers. "
+    Temperatures were sampled every 5 minutes over 4 months, downloaded and analysed identifing delta temperature changes
+    (potential use by an animal). The method is explained in detail within the paper.
+# My proposal
+Pre-process the temperature change date to derive and store an 'event' within the logger.
+This vastly reduces the amount of data stored with cost and power consumption savings but requires custom hardware and software.
+It would be possible to store detailed samples pre and post trigger (the Joyce study does identify false events)
+If it is deemed acceptable to only store occupancy events and just daily maximum and minimum temperature hardware can be even simpler and cost further reduced 
+   
+ - 
 # Parameters:
 - Occupancy: binary state time-stamped
 - Maximum and minimum temperatures 
