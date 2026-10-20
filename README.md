@@ -12,12 +12,15 @@
      wood chip bedding material, close to the bottom of boxes so that animals resting
      in den boxes would be more likely to heat the air around
      temperature loggers. "_  
-    Temperatures were sampled every 5 minutes over 4 months, potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
-    The method is explained in detail within the paper.
+     
+    Temperatures were sampled every 5 minutes over 4 months.  
+    Potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
+    The methodology is explained in detail within the paper.
 # Proposal
 Pre-process the temperature change date to derive and store an 'event' within the logger.
 This vastly reduces the amount of data stored with cost and power consumption savings but requires custom hardware and software.
-It would be possible to store detailed samples pre and post trigger (the Joyce study does identify false events)
+It would be possible to store detailed samples pre and post trigger (the Joyce method does identify false events)
+This however could be stored efficently as <$\Delta$t 5&deg;C/min>
 If it is deemed acceptable to only store occupancy events and just daily maximum and minimum temperature hardware can be even simpler and cost further reduced 
    
  - 
