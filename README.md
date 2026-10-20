@@ -13,9 +13,9 @@
      in den boxes would be more likely to heat the air around
      temperature loggers. "_  
      
-    Temperatures were sampled every 5 minutes over 4 months.  
-    Potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
-    The methodology is explained in detail within the paper.
+Temperatures were sampled every 5 minutes over 4 months.  
+Potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
+The methodology is explained in detail within the paper.
 # Proposal
 Pre-process the temperature change date to derive and store an 'event' within the logger.
 This vastly reduces the amount of data stored with cost and power consumption savings but requires custom hardware and software.
