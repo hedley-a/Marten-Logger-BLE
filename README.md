@@ -14,28 +14,27 @@
      temperature loggers. "_  
      
 Temperatures were sampled every 5 minutes over 4 months.  
-Potential use by an animal was identifyed by searching for temperature changes in **den data only**  
+Potential use by an animal was identified by searching for temperature changes using **absolute den temperature data only**  
 The methodology is explained in detail within the paper.  
 
-## Differential meausurment
-The Joyce study did not use differential meausurement due to the cost of deploying two loggers.  
-Comparing the temperature in the nest-box with the entrance area with our hardware is simple, cheap and improves data integrity.  
+## Differential measurement
+The Joyce study did not use differential measurement due to the cost and complexity of deploying two commercial loggers.    
+Comparing the temperature in the nest-box with the entrance area in our case is simple and cheap and has significant advantages.  
 
 # Planned Improvements
-- Differential meausurments reject common mode change: e.g sunlight on box, diurnal and seasonal.  
-- Store only 'changing data'.    
-- Vastly reduces the amount of data with consequential cost and power consumption savings within the logger.
-- Less data to recover, analyse and discard post download   
+- Differential measurement rejects common mode change: e.g sunlight on box, diurnal and seasonal.      
+- Reduces the amount of data with consequential cost and power consumption savings within the logger.
+- Less data to recover, analyse and discard post download.   
 - Does require custom hardware / software.  
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module
 - 1024k of EEPROM memory (2 x  
 - Passive NTC thermistor differential bridge temperature sensors  
-- SHT41 Temperature and *Humidity!* sensor(external enviroment)
+- SHT41 Temperature and *Humidity!* sensor(external environment)
 - ABS box
 - Stainless Steel immersion sleeves
-- 2 AAA Lithium Iorn disulphide cells and holder
+- 2 AAA Lithium iron disulphide cells and holder
 - Hand wired
 - Approx £25-30 as prototype, cheaper in quantity.
   
@@ -45,9 +44,9 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - Assume four daily occupancy events where differential probe temperature triggers detailed recording.
 - Each event record could be up to one hour at 2 minute sampling: 30 readings of +/- 12°C diff @ 0.1°C resolution.
 - **120 bytes/day**
-- Regular enviromental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
+- Environmental monitoring - every four hours:  Internal, External Max/Min temperatures @ 1°C resolution
 - **24 bytes/day**
-- append a 4-byte epoch timestamp to every regular log and random event,
+- Append a 4-byte epoch timestamp to every regular log and random event,
 - daily consumption **184 bytes**
 - Capacity:  **712 days** before oldest data overwritten
 
@@ -55,14 +54,14 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - Increase logging interval to five minutes
 - Reduce data to one byte - just the +/- 12°C diff @ 0.1°C resolution.
 - **288 bytes/Day**
-- Regular enviromental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
+- Environmental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
 - **24 bytes/day**
 - No need for timestamps due to regularity.
 - **312 bytes/day**
 - **131,072/312 = 354 days**
 ### Recommendations
- The differential approach is key to storing data efficently.
-- Continuous logging, as opposed to event triggered still provides sufficent duration and simplifies software devlopment.
+ The differential approach is key to storing data efficiently.
+- Continuous logging still provides sufficient storage duration and simplifies software development.
 - There is a risk with triggering that events are missed or spurious data recorded.
 - it is expected that using temperature analysis to determine box occupancy may become unreliable during periods of high ambient temperature.   
 ### Risks
