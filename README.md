@@ -66,7 +66,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - it is expected that using temperature analysis to determine box occupancy may become unreliable during periods of high ambient temperature.   
 ### Risks
 - nRF52 development kit for debugging / programming  - working, tested
-- There is a plenty of boiler-plate code and 
+- There is a plenty of boiler-plate code and the device is IMO *'just right for the job'*
 - 'Hello world' BLE (bluetooth low energy) connection with Nordic smartphone APP - tested
 - IANAE but with a bit of help (not all, hopefully from AI) this project should be do-able 
  
