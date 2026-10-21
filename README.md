@@ -63,30 +63,17 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 ### Recommedation
 - Continuous logging still provides sufficent logging duration and simplifies software devlopment.  
 - The differential approach is key to storing data efficently.    
-
-
  
-
 # Deployment:
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
 Probe/logger assembly robust, simple to deploy and service.  
-Data - one year of storage  - download by Bluetooth 
+Data - one year of storage - download by Bluetooth 
 ![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenboxProbes.png)  
 
 ## [Box modification drawing](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/monitor_box.pdf)
 
+## [Circuit diagram](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/schematic_dbl.pdf)
 
-
-
-
-
-  probe         probe
-  |             |  
-  |             |  
-  |             |
-------------------
-|  Enclosure      |  
-------------------
 
 
 
