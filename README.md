@@ -71,8 +71,9 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
 Probe/logger assembly robust, simple to deploy and service.  
 Data - one year of storage  - download by Bluetooth 
-![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenboxProbes.png)
-https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenboxProbes.png
+![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenboxProbes.png)  
+
+
 
 
 
