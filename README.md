@@ -65,7 +65,11 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - Continuous logging, as opposed to event triggered still provides sufficent duration and simplifies software devlopment.
 - There is a risk with triggering that events are missed or spurious data recorded.
 - it is expected that using temperature analysis to determine box occupancy may become unreliable during periods of high ambient temperature.   
--    
+### Risks
+- nRF52 development kit for debugging / programming  - working, tested
+- There is a plenty of boiler-plate code and 
+- 'Hello world' BLE (bluetooth low energy) connection with Nordic smartphone APP - tested
+- IANAE but with a bit of help (not all, hopefully from AI) this project should be do-able 
  
 # Deployment:
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
