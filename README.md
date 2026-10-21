@@ -39,14 +39,14 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - Hand wired
 - Approx £25-30 as prototype, cheaper in quantity.
   
-### Storage:
+### Data Storage:
 1024k of EEPROM memory 131,072 Bytes
 #### Triggered logging
 - Assume four daily occupancy events where differential probe temperature triggers detailed recording.
 - Each event record could be up to one hour at 2 minute sampling: 30 readings of +/- 12°C diff @ 0.1°C resolution.
-- **120 Bytes/day**
+- **120 bytes/day**
 - Regular enviromental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
-- **24 Bytes/day**
+- **24 bytes/day**
 - append a 4-byte epoch timestamp to every regular log and random event,
 - daily consumption **184 bytes**
 - Capacity:  **712 days** before oldest data overwritten
@@ -54,12 +54,16 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 #### Continuous logging
 - Increase logging interval to five minutes
 - Reduce data to one byte - just the +/- 12°C diff @ 0.1°C resolution.
-- **288 Bytes/Day**
+- **288 bytes/Day**
 - Regular enviromental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
-- **24 Bytes/day**
+- **24 bytes/day**
 - No need for timestamps due to regularity.
-- **312 Bytes/day**
+- **312 bytes/day**
 - **131,072/312 = 354 Days**
+### Recommedation
+- Continouous logging will provide sufficent log time and simplifies software devlopment.  
+- The differential is key to storing data efficently.    
+
 
  
 
