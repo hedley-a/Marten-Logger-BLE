@@ -40,12 +40,28 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - Approx £25-30 as prototype, cheaper in quantity.
   
 ### Storage:
-1024k of EEPROM memory
-- Assume four daily occupancy events where differential probe temparature triggers detailed recording.
-- each event record would be one hour at 2 minute sampling: 30 readings of \(\pm \)12°C diff @ 0.1°C resolution
-time, one hours data    
-- Hourly maximum and minimum internal and external temperature
-### 
+1024k of EEPROM memory 131,072 Bytes
+#### Triggered logging
+- Assume four daily occupancy events where differential probe temperature triggers detailed recording.
+- Each event record could be up to one hour at 2 minute sampling: 30 readings of +/- 12°C diff @ 0.1°C resolution.
+- **120 Bytes/day**
+- Regular enviromental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
+- **24 Bytes/day**
+- append a 4-byte epoch timestamp to every regular log and random event,
+- daily consumption **184 bytes**
+- Capacity:  **712 days** before oldest data overwritten
+
+#### Continuous logging
+- Increase logging interval to five minutes
+- Reduce data to one byte - just the +/- 12°C diff @ 0.1°C resolution.
+- **288 Bytes/Day**
+- Regular enviromental monitoring - every four hours:  Internal, External Max/ Min @ 1°C resolution
+- **24 Bytes/day**
+- No need for timestamps due to regularity.
+- **312 Bytes/day**
+- **131,072/312 = 354 Days**
+
+ 
 
 # Deployment:
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
