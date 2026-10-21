@@ -73,6 +73,9 @@ Probe/logger assembly robust, simple to deploy and service.
 Data - one year of storage  - download by Bluetooth 
 ![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenboxProbes.png)  
 
+## [BoxInstallDrg](https://github.com/hedley-a/Marten-Logger-BLE/blob/monitor_box.pdf)
+
+
 
 
 
