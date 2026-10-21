@@ -17,16 +17,18 @@ Temperatures were sampled every 5 minutes over 4 months.
 Potential use by an animal was identifyed by searching for temperature changes in the data  
 The methodology is explained in detail within the paper.
 # Proposed Improvement
-Differential meausurment to reject common mode change e.g sunlight on box, diurnal and seasonal changes.  
-(Construction diagrams below).  
-Analyse and store only'changing data'.    
-This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
-Does though require custom hardware / software.  
+Differential meausurment rejecting common mode change: e.g sunlight on box, diurnal and seasonal.  
+(Diagrams below).  
+Store only 'changing data'.    
+Vastly reduces the amount of data with consequential cost and power consumption savings.  
+Does require custom hardware / software.  
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module  
 - Passive NTC thermistor differential bridge temperature sensors  
-- SHT41 Temperature and *Humidity!* sensor(external enviroment)  
+- SHT41 Temperature and *Humidity!* sensor(external enviroment)
+- ABS box
+- Two fluid   
   
 ### Storage:
 1024k of EEPROM memory program and data
