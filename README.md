@@ -60,9 +60,12 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - No need for timestamps due to regularity.
 - **312 bytes/day**
 - **131,072/312 = 354 days**
-### Recommedation
-- Continuous logging still provides sufficent logging duration and simplifies software devlopment.  
-- The differential approach is key to storing data efficently.    
+### Recommendations
+ The differential approach is key to storing data efficently.
+- Continuous logging, as opposed to event triggered still provides sufficent duration and simplifies software devlopment.
+- There is a risk with triggering that events are missed or spurious data recorded.
+- it is expected that using temperature analysis to determine box occupancy may become unreliable during periods of high ambient temperature.   
+-    
  
 # Deployment:
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
