@@ -31,7 +31,7 @@ Trigger parameters, &#916; temperature and &#916; time would be user configurabl
 - SHT41 SHT45 Temperature and Humidity Sensor(external enviroment)  
   
 ### Storage:
-512k of flash memory program and data
+1024k of EEPROM memory program and data
 - Occupancy: state time-stamped data  
 - Daily maximum and minimum internal and external temperatures  
 ### Lifespan Estimate (64 KB Flash Partition)
