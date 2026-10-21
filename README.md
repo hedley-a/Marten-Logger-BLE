@@ -61,7 +61,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - **131,072/312 = 354 days**
 ### Recommendations
  The differential approach is key to storing data efficiently.
-- Continuous logging still provides sufficient storage duration and simplifies software development.
+- Continuous logging provides sufficient storage duration whilst simplifying software.
 - There is a risk with triggering that events are missed or spurious data recorded.
 - it is expected that using temperature analysis to determine box occupancy may become unreliable during periods of high ambient temperature.   
 ### Risks
