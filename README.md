@@ -14,21 +14,19 @@
      temperature loggers. "_  
      
 Temperatures were sampled every 5 minutes over 4 months.  
-Potential use by an animal was identifyed by searching for delta temperature changes in the downloaded data  
+Potential use by an animal was identifyed by searching for temperature changes in the data  
 The methodology is explained in detail within the paper.
-# Proposal
-Pre-process the temperature change date to derive and store an 'event' within the logger.  
+# Proposed Improvement
+Differential meausurment to reject common mode change e.g sunlight on box, diurnal and seasonal changes.  
+(Construction diagrams below).  
+Analyse and store only'changing data'.    
 This vastly reduces the amount of data stored with consequential cost and power consumption savings.  
-- requires custom hardware / software.  
-
-The Joyce method does identify false events, to differentiate, store pre and post trigger values.  
-e.g. "< &#916;t 5.2&deg;C:trig -5 min, &#916;t 4.9 &deg;C trig -4 min, &#916;t 3.8 &deg;C trig -3 min,...&#916;t 2.9&deg;C trig +5 min, >"  
-Trigger parameters, &#916; temperature and &#916; time would be user configurable over bluetooth.  
+Does though require custom hardware / software.  
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module  
-- Passive NTC thermistor differential bridge temperature sensor (occupancy/internal)  
-- SHT41 SHT45 Temperature and Humidity Sensor(external enviroment)  
+- Passive NTC thermistor differential bridge temperature sensors  
+- SHT41 Temperature and *Humidity!* sensor(external enviroment)  
   
 ### Storage:
 1024k of EEPROM memory program and data
