@@ -59,10 +59,10 @@ Comparing the temperature in the nest-box with the entrance area with our hardwa
 - **24 bytes/day**
 - No need for timestamps due to regularity.
 - **312 bytes/day**
-- **131,072/312 = 354 Days**
+- **131,072/312 = 354 days**
 ### Recommedation
-- Continouous logging will provide sufficent log time and simplifies software devlopment.  
-- The differential is key to storing data efficently.    
+- Continuous logging still provides sufficent logging duration and simplifies software devlopment.  
+- The differential approach is key to storing data efficently.    
 
 
  
