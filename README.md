@@ -1,10 +1,11 @@
-# Marten box occupancy logger
+# Marten den box logger
 ![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenBox_front.jpg)
 ## Marten box inside view
 ![grafik](https://github.com/hedley-a/Marten-Logger-BLE/blob/main/images/DenBox_interior.jpg)
 
 - Objectives: A low cost, reliable and easy to use logging device
-- Improving upon the method of detecting occupancy used in the Joyce North American study
+- Improve the method of detecting occupancy used in the North American Joyce study 
+  
 ## [Joyce Study](https://stacksjournal.org/wp-content/uploads/2025/06/Joyce-25003-Article.pdf)
    _"Each den box had an internal temperature logger (HOBO® UA-001-64
      pendant logger or MX2201, Onset Computer Corporation, Massachusetts,
@@ -60,7 +61,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - **312 bytes/day**
 - **131,072/312 = 354 days**
 ### Recommendations
- The differential approach is key to storing data efficiently.
+ Differential temperature storage is the key to storing data efficiently.
 - Continuous logging provides sufficient storage duration whilst simplifying software.
 - There is a risk with triggering that events are missed or spurious data recorded.
 - it is expected that using temperature analysis to determine box occupancy may become unreliable during periods of high ambient temperature.   
@@ -68,9 +69,14 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - nRF52 development kit for debugging / programming  - working, tested
 - There is a plenty of boiler-plate code and the device is IMO *'just right for the job'*
 - 'Hello world' BLE (bluetooth low energy) connection with Nordic smartphone APP - tested
-- IANAE but with a bit of help (not all, hopefully from AI) this project should be do-able 
- 
-# Deployment:
+- IANAE but with a bit of help (not all, hopefully from AI) this project should be do-able.
+### Design constraints:
+EEPROM memory is cheap, low power and easy to integrate but with limited capacity.
+SD cards although offering considerable capacity have their own problems this is coverd in detial here:
+[thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/](https://thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/)
+
+   
+### Deployment:
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
 Probe/logger assembly robust, simple to deploy and service.  
 Data - one year of storage - download by Bluetooth 
