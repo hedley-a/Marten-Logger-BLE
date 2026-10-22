@@ -30,7 +30,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module
-- 1024k of EEPROM memory (2 x  
+- 1024kilobit  - 128 Kilobytes of EEPROM memory (2 x CAT24C512)  
 - Passive NTC thermistor differential bridge temperature sensors  
 - SHT41 Temperature and *Humidity!* sensor(external environment)
 - ABS box
@@ -59,7 +59,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - **24 bytes/day**
 - No need for timestamps due to regularity.
 - **312 bytes/day**
-- **131,072/312 = 354 days**
+- **131,072/312 = 354 days(approx)**
 ### Recommendations
  Differential temperature storage is the key to storing data efficiently.
 - Continuous logging provides sufficient storage duration whilst simplifying software.
@@ -70,11 +70,16 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - There is a plenty of boiler-plate code and the device is IMO *'just right for the job'*
 - 'Hello world' BLE (bluetooth low energy) connection with Nordic smartphone APP - tested
 - IANAE but with a bit of help (not all, hopefully from AI) this project should be do-able.
-### Design constraints:
-EEPROM memory is cheap, low power and easy to integrate but with limited capacity.
-SD cards although offering considerable capacity have their own problems this is coverd in detial here:
-[thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/](https://thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/)
 
+### Design constraints:
+- **EEPROM memory** is cheap, low power, easy to integrate but with limited capacity.  
+- SD cards offer capacity but come with low power low Voltage problems:  
+- [thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/](https://thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/)
+- EEPROM requires remote download - adds to design complexity but advantage for users.
+- In principle 6*512KBit EEPROMS could be addressed by one nRF52 device (3KBit of memory).  
+-**Lithium/Iron Disulfide battery** (AAA Size * 2)
+- 1 Ah capacity 1.4 Watt/hours * 2  - 2.4 Watt/hours
+- Stable voltage matched to nRF52 and memory modules
    
 ### Deployment:
 Two 6 mm holes drilled into the base of the box on either side of one internal nest-box baffle
