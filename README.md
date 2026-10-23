@@ -22,11 +22,15 @@ The methodology is explained in detail within the paper.
 The Joyce study did not use differential measurement due to the cost and complexity of deploying two commercial loggers.    
 Comparing the temperature in the nest-box with the entrance area in our case is simple and cheap and has significant advantages.  
 
-# Planned Improvements
+# Improvements
 - Differential measurement rejects common mode change: e.g sunlight on box, diurnal and seasonal.      
 - Reduces the amount of data with consequential cost and power consumption savings within the logger.
 - Less data to recover, analyse and discard post download.   
-- Does require custom hardware / software.  
+- Does require custom hardware / software.
+## Radar sensing
+- Evaluation of the LD2410S shows promise
+- Configurable range and sensitivity
+- Low power 40 - 120 \mu Amps - 3.0 - 3.6 Volts
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module
