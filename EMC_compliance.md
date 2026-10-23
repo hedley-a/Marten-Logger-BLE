@@ -1,6 +1,6 @@
 ## EMC directive
 
-Whist a few prototypes will not attract much attention the concept could have a broad appeal. 
+Whist a few prototypes will not attract much attention the concept may have a broader appeal. 
 
 - At some point someone will ask about compliance.
 
