@@ -1,4 +1,4 @@
-**EMC directive compliance
+##EMC directive
 
 Whist a few prototypes will not attract much attention the concept could have a broad appeal. 
 
