@@ -23,6 +23,7 @@ The Joyce study did not use differential measurement due to the cost and complex
 Comparing the temperature in the nest-box with the entrance area in our case is simple and cheap and has significant advantages.  
 
 # Improvements
+## Temperature (only) logging  
 - Differential measurement rejects common mode change: e.g sunlight on box, diurnal and seasonal.      
 - Reduces the amount of data with consequential cost and power consumption savings within the logger.
 - Less data to recover, analyse and discard post download.   
@@ -30,7 +31,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 ## Radar sensing
 - Evaluation of the LD2410S shows promise
 - Configurable range and sensitivity
-- Low power 40 - 120 \mu Amps - 3.0 - 3.6 Volts
+- Low power 40 - 120 microamps - 3.0 - 3.6 Volts.
 
 ## Hardware
 - Nordic Semiconductor NRF52832 Bluetooth Module BLE 4.2 Low Power Bluetooth module
@@ -80,7 +81,7 @@ Comparing the temperature in the nest-box with the entrance area in our case is 
 - SD cards offer capacity but come with low power low Voltage problems:  
 - [thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/](https://thecavepearlproject.org/2017/05/21/switching-off-sd-cards-for-low-power-data-logging/)
 - EEPROM requires remote download - adds to design complexity but advantage for users.
-- In principle 6*512KBit EEPROMS could be addressed by one nRF52 device (3KBit of memory).  
+- In principle 6*512KBit EEPROMS could be addressed by one nRF52 device (3KBit of memory). 
 -**Lithium/Iron Disulfide battery** (AAA Size * 2)
 - 1 Ah capacity 1.4 Watt/hours * 2  - 2.4 Watt/hours
 - Stable voltage matched to nRF52 and memory modules
